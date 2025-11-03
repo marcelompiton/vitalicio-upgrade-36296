@@ -202,6 +202,38 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--accent)/0.1),transparent)]" />
+        <div className="max-w-5xl mx-auto relative">
+          <div className="text-center mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 border-2 border-accent/40 rounded-full px-6 py-3 mb-6 backdrop-blur-sm animate-pulse">
+              <span className="text-3xl animate-bounce">▶️</span>
+              <p className="text-lg md:text-xl font-bold bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))] bg-clip-text text-transparent">
+                Clique no vídeo abaixo e descubra como a IA pode mudar a tua rotina jurídica
+              </p>
+            </div>
+          </div>
+
+          <div className="relative group animate-scale-in">
+            <div className="absolute -inset-1 bg-gradient-to-r from-accent via-primary to-accent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 animate-pulse opacity-75" />
+            <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-glow)] border-2 border-accent/30 group-hover:border-accent/50 transition-all duration-300 bg-black">
+              <div className="aspect-video">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/IkDAGKuc50c"
+                  title="Como a IA pode transformar sua rotina jurídica"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Immersion Section */}
       <section className="py-8 md:py-12 px-4 bg-gradient-to-br from-card via-background to-card relative overflow-hidden">
         {/* Animated background effects */}
