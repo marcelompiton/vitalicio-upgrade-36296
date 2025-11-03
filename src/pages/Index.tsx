@@ -288,7 +288,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <ComparisonCard
               title="Acesso Atual"
-              price="—"
+              price="2.671"
               features={[
                 { text: "Acesso por 1 ano apenas", included: true },
                 { text: "Renovação necessária", included: true },
