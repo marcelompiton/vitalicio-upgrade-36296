@@ -82,7 +82,7 @@ const Index = () => {
       icon: Award,
       title: 'Livro "Inteligência Artificial para Profissionais do Direito"',
       description:
-        "Receba acesso vitalício ao livro digital, sempre que lançado! Um guia completo sobre IA jurídica - totalmente incluído no seu upgrade.",
+        "Receba acesso vitalício ao livro digital, sempre que lançado! Um guia completo sobre IA jurídica - totalmente incluído no seu acesso vitalício.",
       image: bookIaDireito,
     },
   ];
@@ -116,7 +116,7 @@ const Index = () => {
     {
       question: "Existe alguma garantia?",
       answer:
-        "Sim! Você tem 7 dias de garantia incondicional. Se não ficar satisfeito com o upgrade, devolvemos 100% do seu investimento, sem perguntas.",
+        "Sim! Você tem 7 dias de garantia incondicional. Se não ficar satisfeito com o acesso vitalício, devolvemos 100% do seu investimento, sem perguntas.",
     },
   ];
 
@@ -322,7 +322,7 @@ const Index = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Por Que Fazer o Upgrade Agora?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Por Que Fazer o VITALÍCIO Agora?</h2>
             <p className="text-xl text-muted-foreground">Todos os benefícios que você vai conquistar</p>
           </div>
 
@@ -399,7 +399,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Perguntas Frequentes</h2>
-            <p className="text-xl text-muted-foreground">Tire suas dúvidas sobre o upgrade vitalício</p>
+            <p className="text-xl text-muted-foreground">Tire suas dúvidas sobre o acesso vitalício</p>
           </div>
 
           <FAQSection items={faqItems} />
@@ -427,7 +427,7 @@ const Index = () => {
           </div>
 
           <Button variant="accent" size="xl" onClick={handleCTAClick} className="mb-6">
-            Fazer Upgrade Agora
+            Garantir Acesso Vitalício Agora
           </Button>
 
           <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground">

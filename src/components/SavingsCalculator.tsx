@@ -38,7 +38,7 @@ export const SavingsCalculator = () => {
               
               <div className="space-y-3 mb-4">
                 <div>
-                  <p className="text-xs text-muted-foreground mb-1">Sem upgrade</p>
+                  <p className="text-xs text-muted-foreground mb-1">Sem vitalício</p>
                   <p className="text-lg font-semibold text-muted-foreground line-through">
                     R$ {period.withoutUpgrade.toLocaleString('pt-BR')}
                   </p>
