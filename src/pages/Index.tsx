@@ -288,10 +288,10 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <ComparisonCard
               title="Renovação Anual"
-              price="587,00"
+              price="687,00"
               features={[
                 { text: "Pagamento todo ano", included: true },
-                { text: "Total em 5 anos: R$ 2.935,--", included: true },
+                { text: "Total em 5 anos: R$ 3.435,--", included: true },
                 { text: "Apenas o atual conteúdo", included: true },
                 { text: "Risco de perder o acesso", included: true },
                 { text: "Comunidade vitalícia", included: false },
