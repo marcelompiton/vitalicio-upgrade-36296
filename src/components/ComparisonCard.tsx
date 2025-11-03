@@ -17,7 +17,7 @@ export const ComparisonCard = ({ title, price, features, highlighted }: Comparis
       }`}
     >
       {highlighted && (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-accent-foreground px-6 py-1 rounded-full text-sm font-bold">
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--accent-glow))] text-accent-foreground px-6 py-1 rounded-full text-sm font-bold text-center">
           OFERTA ÚNICA - APENAS 20 VAGAS
         </div>
       )}
