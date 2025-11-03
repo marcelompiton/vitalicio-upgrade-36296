@@ -66,13 +66,6 @@ const Index = () => {
         "Sem pressão de tempo ou data de vencimento. Acesse o conteúdo quando quiser, quantas vezes quiser, para sempre.",
     },
     {
-      icon: Star,
-      title: "Reconhecimento aos Alunos Pioneiros",
-      description:
-        "Esta promoção não vai se repetir. Estamos fazendo essa oferta única apenas para você, que é aluno desde o início do curso e faz parte da nossa comunidade original.",
-      image: offerExclusive,
-    },
-    {
       icon: Users,
       title: "Evolução Profissional Contínua",
       description:
