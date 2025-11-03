@@ -281,37 +281,37 @@ const Index = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 bg-background/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Compare e Veja a Diferença</h2>
-            <p className="text-xl text-muted-foreground">Invista no seu futuro com a melhor opção</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">R$ 687 Hoje ou R$ 2.671 Todo Ano?</h2>
+            <p className="text-xl text-muted-foreground">Faça as contas: você economiza +R$ 12.668 em 5 anos!</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <ComparisonCard
-              title="Acesso Atual"
+              title="Renovação Anual"
               price="2.671"
               features={[
-                { text: "Acesso por 1 ano apenas", included: true },
-                { text: "Renovação necessária", included: true },
-                { text: "Custos recorrentes", included: true },
-                { text: "Todas as atualizações futuras", included: false },
+                { text: "Pagamento todo ano", included: true },
+                { text: "Total em 5 anos: R$ 13.355", included: true },
+                { text: "Renovação obrigatória", included: true },
+                { text: "Risco de perder o acesso", included: true },
                 { text: "Comunidade vitalícia", included: false },
-                { text: "Acesso vitalício ao app", included: false },
-                { text: 'Livro "IA para Profissionais do Direito"', included: false },
+                { text: "Livro de IA incluído", included: false },
+                { text: "App mobile vitalício", included: false },
               ]}
             />
 
             <ComparisonCard
-              title="Acesso Vitalício"
+              title="Vitalício por R$ 687"
               price="687"
               highlighted
               features={[
-                { text: "Acesso para sempre", included: true },
-                { text: "Sem renovações necessárias", included: true },
-                { text: "Pagamento único", included: true },
-                { text: "Todas as atualizações futuras", included: true },
+                { text: "Pagamento ÚNICO para sempre", included: true },
+                { text: "Economia de +R$ 12.668 em 5 anos", included: true },
+                { text: "Nunca mais pague", included: true },
+                { text: "Acesso garantido para sempre", included: true },
                 { text: "Comunidade vitalícia", included: true },
-                { text: "Acesso vitalício ao app", included: true },
-                { text: "Sempre que lançada uma edição do livro, você será o primeiro a recebê-la!", included: true },
+                { text: "Livro de IA incluído", included: true },
+                { text: "App mobile vitalício", included: true },
               ]}
             />
           </div>
