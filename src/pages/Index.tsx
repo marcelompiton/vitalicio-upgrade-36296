@@ -99,14 +99,14 @@ const Index = () => {
         "Sim! Esta é uma oferta exclusiva e limitada até hoje às 23:59 para nossos alunos atuais. Após esse horário, a promoção será encerrada definitivamente.",
     },
     {
-      question: "O que acontece se eu não fizer o upgrade agora?",
+      question: "O que acontece se eu não aproveitar essa oferta hoje?",
       answer:
-        "Você continuará com seu acesso normal de 1 ano, mas perderá a oportunidade única de ter acesso vitalício por apenas R$ 650,00. Essa oferta não será repetida.",
+        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 687,00. Após hoje, essa oferta especial não estará mais disponível.",
     },
     {
       question: "Quem pode aproveitar essa oferta?",
       answer:
-        "Esta promoção é exclusiva para alunos que já estão matriculados no curso e possuem acesso ativo no momento.",
+        "Qualquer pessoa interessada em dominar a IA na prática jurídica! Esta é uma oferta especial de 1 dia aberta para todos que desejam investir no seu futuro profissional.",
     },
     {
       question: "Posso parcelar o pagamento?",
@@ -134,7 +134,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center">
               <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm">
-                <span className="text-accent font-semibold">🔥 Oferta Exclusiva para Alunos - APENAS 20 VAGAS</span>
+                <span className="text-accent font-semibold">🔥 Oferta Única de 1 Dia - APENAS 20 VAGAS</span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -149,11 +149,11 @@ const Index = () => {
                 <span className="block mb-2">
                   <span className="text-muted-foreground line-through text-lg">De R$ 4.875,00</span>
                   <span className="ml-2 text-sm bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">
-                    87% OFF
+                    86% OFF
                   </span>
                 </span>
-                Por apenas <span className="text-accent font-bold text-2xl">R$ 650,00</span>, transforme seu acesso de 1
-                ano em acesso <span className="text-foreground font-semibold">vitalício</span> ao curso completo
+                Por apenas <span className="text-accent font-bold text-2xl">R$ 687,00</span>, garanta seu acesso{" "}
+                <span className="text-foreground font-semibold">vitalício</span> ao curso completo de IA Jurídica
               </p>
 
               <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-4 mb-8 backdrop-blur-sm">
@@ -302,7 +302,7 @@ const Index = () => {
 
             <ComparisonCard
               title="Acesso Vitalício"
-              price="650"
+              price="687"
               highlighted
               features={[
                 { text: "Acesso para sempre", included: true },
@@ -373,8 +373,8 @@ const Index = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Não Perca Esta Oportunidade Única</h2>
 
           <p className="text-xl text-muted-foreground mb-8">
-            Esta é uma oferta especial e limitada. Após as 23:59 de hoje, o upgrade vitalício não estará mais disponível por
-            este valor promocional.
+            Esta é uma oferta especial de 1 dia apenas! Após as 23:59 de hoje, o acesso vitalício não estará mais disponível por
+            este valor promocional. Esta oportunidade não se repetirá.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
@@ -412,7 +412,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Pronto Para Garantir Seu Acesso Vitalício?</h2>
 
           <p className="text-xl text-muted-foreground mb-8">
-            Aproveite esta oportunidade única de investir no seu futuro por apenas R$ 650,00
+            Aproveite esta oferta especial de 1 dia e invista no seu futuro por apenas R$ 687,00
           </p>
 
           <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-6 mb-12 backdrop-blur-sm max-w-2xl mx-auto">
@@ -441,7 +441,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
           <p className="mb-2">© 2025 Curso com IA. Todos os direitos reservados.</p>
-          <p className="text-xs">Esta é uma oferta exclusiva para alunos matriculados. Válida por 72 horas.</p>
+          <p className="text-xs">Oferta única e especial. Válida apenas por 1 dia - até hoje às 23:59.</p>
         </div>
       </footer>
     </div>
