@@ -3,27 +3,23 @@ import { useEffect, useState } from 'react';
 
 export const SpotsRemaining = () => {
   const totalSpots = 20;
-  const initialSpots = 3; // Começa com 3 vagas disponíveis
+  const initialSpots = 19; // Começa com 19 vagas disponíveis
+  
+  // Horário de início: momento que o componente montou
+  const [startTime] = useState(() => new Date());
   
   const calculateSpotsRemaining = () => {
-    // Horário de início: 31 de outubro de 2025 às 18:52 (horário de Brasília)
-    // A cada 45 minutos diminui 1 vaga, começando com 3 vagas
-    const startTime = new Date('2025-10-31T18:52:00-03:00');
+    // A cada 40 minutos diminui 1 vaga, começando com 19 vagas
     const now = new Date();
-    
-    // Se ainda não começou, retorna todas as vagas iniciais
-    if (now < startTime) {
-      return initialSpots;
-    }
     
     // Calcula minutos decorridos desde o início
     const minutesElapsed = Math.floor((now.getTime() - startTime.getTime()) / (1000 * 60));
     
-    // Reduz 1 vaga a cada 45 minutos
-    const spotsReduced = Math.floor(minutesElapsed / 45);
+    // Reduz 1 vaga a cada 40 minutos
+    const spotsReduced = Math.floor(minutesElapsed / 40);
     
-    // Retorna vagas restantes, mínimo 0
-    return Math.max(initialSpots - spotsReduced, 0);
+    // Retorna vagas restantes, mínimo 1 (sempre deixa pelo menos 1 vaga)
+    return Math.max(initialSpots - spotsReduced, 1);
   };
   
   const [spotsRemaining, setSpotsRemaining] = useState(calculateSpotsRemaining());

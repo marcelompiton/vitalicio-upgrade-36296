@@ -14,10 +14,14 @@ import offerExclusive from "@/assets/offer-exclusive.png";
 import aiVanguard from "@/assets/ai-vanguard.png";
 import aiBrain from "@/assets/ai-brain.png";
 import bookIaDireito from "@/assets/book-ia-direito.png";
+import { toZonedTime } from 'date-fns-tz';
 
 const Index = () => {
-  // Data de fim da promoção: 31 de outubro de 2025 às 23:59
-  const promoEndDate = new Date('2025-10-31T23:59:59-03:00');
+  // Data de fim da promoção: hoje às 23:59 no horário de Brasília
+  const today = new Date();
+  const brasiliaTime = toZonedTime(today, 'America/Sao_Paulo');
+  const promoEndDate = new Date(brasiliaTime);
+  promoEndDate.setHours(23, 59, 59, 999);
 
   const handleCTAClick = () => {
     window.open("https://pay.hotmart.com/M96848969A?off=ckiusfpy&bid=1760153935709", "_blank");
@@ -90,9 +94,9 @@ const Index = () => {
         "Com o acesso vitalício, você terá acesso ilimitado a todos os módulos do curso, incluindo futuras atualizações e novos conteúdos, sem precisar pagar mensalidades ou renovações.",
     },
     {
-      question: "Essa promoção é realmente por apenas 3 dias?",
+      question: "Essa promoção é realmente apenas até hoje?",
       answer:
-        "Sim! Esta é uma oferta exclusiva e limitada de apenas 3 dias para nossos alunos atuais. Após esse período, a promoção será encerrada definitivamente.",
+        "Sim! Esta é uma oferta exclusiva e limitada até hoje às 23:59 para nossos alunos atuais. Após esse horário, a promoção será encerrada definitivamente.",
     },
     {
       question: "O que acontece se eu não fizer o upgrade agora?",
@@ -337,7 +341,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Não Perca Esta Oportunidade Única</h2>
 
           <p className="text-xl text-muted-foreground mb-8">
-            Esta é uma oferta especial e limitada. Após os 3 dias, o upgrade vitalício não estará mais disponível por
+            Esta é uma oferta especial e limitada. Após as 23:59 de hoje, o upgrade vitalício não estará mais disponível por
             este valor promocional.
           </p>
 
