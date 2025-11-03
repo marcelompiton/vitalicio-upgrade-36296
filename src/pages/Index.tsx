@@ -24,7 +24,7 @@ const Index = () => {
   promoEndDate.setHours(23, 59, 59, 999);
 
   const handleCTAClick = () => {
-    window.open("https://pay.hotmart.com/M96848969A?off=ckiusfpy&bid=1760153935709", "_blank");
+    window.open("https://pay.hotmart.com/M96848969A?off=5awtamt2&bid=1762175986542", "_blank");
   };
 
   const benefits = [
