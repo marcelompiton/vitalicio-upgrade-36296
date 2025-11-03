@@ -14,12 +14,12 @@ import offerExclusive from "@/assets/offer-exclusive.png";
 import aiVanguard from "@/assets/ai-vanguard.png";
 import aiBrain from "@/assets/ai-brain.png";
 import bookIaDireito from "@/assets/book-ia-direito.png";
-import { toZonedTime } from 'date-fns-tz';
+import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
   // Data de fim da promoção: hoje às 23:59 no horário de Brasília
   const today = new Date();
-  const brasiliaTime = toZonedTime(today, 'America/Sao_Paulo');
+  const brasiliaTime = toZonedTime(today, "America/Sao_Paulo");
   const promoEndDate = new Date(brasiliaTime);
   promoEndDate.setHours(23, 59, 59, 999);
 
@@ -288,11 +288,11 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <ComparisonCard
               title="Renovação Anual"
-              price="2.671"
+              price="587,00"
               features={[
                 { text: "Pagamento todo ano", included: true },
-                { text: "Total em 5 anos: R$ 13.355", included: true },
-                { text: "Renovação obrigatória", included: true },
+                { text: "Total em 5 anos: R$ 2.935,--", included: true },
+                { text: "Apenas o atual conteúdo", included: true },
                 { text: "Risco de perder o acesso", included: true },
                 { text: "Comunidade vitalícia", included: false },
                 { text: "Livro de IA incluído", included: false },
@@ -373,8 +373,8 @@ const Index = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Não Perca Esta Oportunidade Única</h2>
 
           <p className="text-xl text-muted-foreground mb-8">
-            Esta é uma oferta especial de 1 dia apenas! Após as 23:59 de hoje, o acesso vitalício não estará mais disponível por
-            este valor promocional. Esta oportunidade não se repetirá.
+            Esta é uma oferta especial de 1 dia apenas! Após as 23:59 de hoje, o acesso vitalício não estará mais
+            disponível por este valor promocional. Esta oportunidade não se repetirá.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
