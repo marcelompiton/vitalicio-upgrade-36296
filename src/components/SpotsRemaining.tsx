@@ -1,22 +1,30 @@
 import { Users } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { toZonedTime } from 'date-fns-tz';
 
 export const SpotsRemaining = () => {
   const totalSpots = 20;
-  const initialSpots = 19; // Começa com 19 vagas disponíveis
-  
-  // Horário de início: momento que o componente montou
-  const [startTime] = useState(() => new Date());
+  const initialSpots = 16; // Começa com 16 vagas disponíveis
   
   const calculateSpotsRemaining = () => {
-    // A cada 40 minutos diminui 1 vaga, começando com 19 vagas
-    const now = new Date();
+    // Horário de início: 08:30 de Brasília (hoje)
+    const timezone = 'America/Sao_Paulo';
+    const now = toZonedTime(new Date(), timezone);
     
-    // Calcula minutos decorridos desde o início
+    // Define 08:30 de hoje em Brasília
+    const startTime = new Date(now);
+    startTime.setHours(8, 30, 0, 0);
+    
+    // Calcula minutos decorridos desde 08:30
     const minutesElapsed = Math.floor((now.getTime() - startTime.getTime()) / (1000 * 60));
     
-    // Reduz 1 vaga a cada 40 minutos
-    const spotsReduced = Math.floor(minutesElapsed / 40);
+    // Se ainda não passou das 08:30, retorna vagas iniciais
+    if (minutesElapsed < 0) {
+      return initialSpots;
+    }
+    
+    // Reduz 1 vaga a cada 45 minutos
+    const spotsReduced = Math.floor(minutesElapsed / 45);
     
     // Retorna vagas restantes, mínimo 1 (sempre deixa pelo menos 1 vaga)
     return Math.max(initialSpots - spotsReduced, 1);
