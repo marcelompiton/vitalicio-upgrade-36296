@@ -24,8 +24,38 @@
   <meta property="og:description" content=" Oferta exclusiva por 24 horas.">
     <meta name="twitter:description" content="Oferta exclusiva por 24 horas.">
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code Enhanced -->
     <script>
+    // Funções auxiliares para cookies
+    function setCookie(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      const expires = "expires=" + date.toUTCString();
+      document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+    
+    function getCookie(name) {
+      const nameEQ = name + "=";
+      const ca = document.cookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+      }
+      return null;
+    }
+    
+    // Captura o fbclid da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const fbclid = urlParams.get('fbclid');
+    
+    // Se houver fbclid, cria o cookie _fbc
+    if (fbclid) {
+      const fbc = 'fb.1.' + Date.now() + '.' + fbclid;
+      setCookie('_fbc', fbc, 90); // Cookie válido por 90 dias
+    }
+    
+    // Código padrão do Meta Pixel
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -35,32 +65,19 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
-    // Captura o fbclid da URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const fbclid = urlParams.get('fbclid');
+    // Inicialização com parâmetros avançados
+    fbq('init', '1291009158589906', {}, {
+      fbc: getCookie('_fbc'),
+      fbp: getCookie('_fbp')
+    });
     
-    if (fbclid) {
-      // Armazena o fbclid em um cookie
-      document.cookie = `_fbc=fb.1.${Date.now()}.${fbclid}; path=/; max-age=7776000`;
-    }
-    
-    // Recupera o valor do cookie fbc
-    function getCookie(name) {
-      const value = `; ${document.cookie}`;
-      const parts = value.split(`; ${name}=`);
-      if (parts.length === 2) return parts.pop().split(';').shift();
-    }
-    
-    const fbc = getCookie('_fbc');
-    const fbp = getCookie('_fbp');
-    
-    fbq('init', '1291009158589906');
+    // Track PageView com parâmetros avançados
     fbq('track', 'PageView', {}, {
-      fbc: fbc,
-      fbp: fbp
+      fbc: getCookie('_fbc'),
+      fbp: getCookie('_fbp')
     });
     </script>
-    <!-- End Meta Pixel Code -->
+    <!-- End Meta Pixel Code Enhanced -->
 </head>
 
   <body>
