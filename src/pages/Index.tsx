@@ -17,10 +17,11 @@ import bookIaDireito from "@/assets/book-ia-direito.png";
 import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
-  // Data de fim da promoção: hoje às 23:59 no horário de Brasília
+  // Data de fim da promoção: amanhã à meia-noite no horário de Brasília
   const today = new Date();
   const brasiliaTime = toZonedTime(today, "America/Sao_Paulo");
   const promoEndDate = new Date(brasiliaTime);
+  promoEndDate.setDate(promoEndDate.getDate() + 1); // Adiciona 1 dia
   promoEndDate.setHours(23, 59, 59, 999);
 
   const handleCTAClick = () => {
@@ -87,19 +88,19 @@ const Index = () => {
         "Com o acesso vitalício, você terá acesso ilimitado a todos os módulos do curso, incluindo futuras atualizações e novos conteúdos, sem precisar pagar mensalidades ou renovações.",
     },
     {
-      question: "Essa promoção é realmente apenas até hoje?",
+      question: "Essa promoção é realmente apenas por 2 dias?",
       answer:
-        "Sim! Esta é uma oferta exclusiva e limitada até hoje às 23:59 para nossos alunos atuais. Após esse horário, a promoção será encerrada definitivamente.",
+        "Sim! Esta é uma oferta exclusiva e limitada por apenas 2 dias, terminando amanhã à meia-noite (23:59). Após esse horário, a promoção será encerrada definitivamente.",
     },
     {
-      question: "O que acontece se eu não aproveitar essa oferta hoje?",
+      question: "O que acontece se eu não aproveitar essa oferta nesses 2 dias?",
       answer:
-        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 687,00. Após hoje, essa oferta especial não estará mais disponível.",
+        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 687,00. Após amanhã à meia-noite, essa oferta especial não estará mais disponível.",
     },
     {
       question: "Quem pode aproveitar essa oferta?",
       answer:
-        "Qualquer pessoa interessada em dominar a IA na prática jurídica! Esta é uma oferta especial de 1 dia aberta para todos que desejam investir no seu futuro profissional.",
+        "Qualquer pessoa interessada em dominar a IA na prática jurídica! Esta é uma oferta especial de 2 dias aberta para todos que desejam investir no seu futuro profissional.",
     },
     {
       question: "Posso parcelar o pagamento?",
@@ -366,7 +367,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Não Perca Esta Oportunidade Única</h2>
 
           <p className="text-xl text-muted-foreground mb-8">
-            Esta é uma oferta especial de 1 dia apenas! Após as 23:59 de hoje, o acesso vitalício não estará mais
+            Esta é uma oferta especial de 2 dias apenas! Termina amanhã à meia-noite (23:59) e o acesso vitalício não estará mais
             disponível por este valor promocional. Esta oportunidade não se repetirá.
           </p>
 
@@ -376,8 +377,8 @@ const Index = () => {
               <div className="text-muted-foreground">Vagas limitadas</div>
             </div>
             <div className="bg-card/50 border border-border rounded-xl p-6">
-              <div className="text-4xl font-bold text-primary mb-2">Hoje</div>
-              <div className="text-muted-foreground">Encerra às 23:59</div>
+              <div className="text-4xl font-bold text-primary mb-2">2 Dias</div>
+              <div className="text-muted-foreground">Termina Amanhã 23:59</div>
             </div>
           </div>
 
@@ -434,7 +435,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
           <p className="mb-2">© 2025 Curso com IA. Todos os direitos reservados.</p>
-          <p className="text-xs">Oferta única e especial. Válida apenas por 1 dia - até hoje às 23:59.</p>
+          <p className="text-xs">Oferta única e especial. Válida por 2 dias - termina amanhã à meia-noite (23:59).</p>
         </div>
       </footer>
     </div>
