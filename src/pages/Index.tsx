@@ -4,6 +4,7 @@ import { ComparisonCard } from "@/components/ComparisonCard";
 import { BenefitCard } from "@/components/BenefitCard";
 import { FAQSection } from "@/components/FAQItem";
 import { SpotsRemaining } from "@/components/SpotsRemaining";
+import { PricingPlans } from "@/components/PricingPlans";
 import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users } from "lucide-react";
 import heroInstructor from "@/assets/hero-instructor.jpg";
 import coursePlatform from "@/assets/course-platform.png";
@@ -24,8 +25,11 @@ const Index = () => {
   promoEndDate.setDate(promoEndDate.getDate() + 1); // Adiciona 1 dia
   promoEndDate.setHours(23, 59, 59, 999);
 
-  const handleCTAClick = () => {
-    window.open("https://pay.hotmart.com/M96848969A?off=5awtamt2&bid=1762175986542", "_blank");
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById("pricing-plans");
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const benefits = [
@@ -174,10 +178,10 @@ const Index = () => {
               <Button
                 variant="accent"
                 size="xl"
-                onClick={handleCTAClick}
+                onClick={scrollToPricing}
                 className="mb-4 animate-pulse-slow w-full md:w-auto"
               >
-                Garantir Acesso Vitalício Agora
+                Ver Opções de Acesso
               </Button>
 
               <p className="text-sm text-muted-foreground mt-4">⚡ Apenas 20 vagas • 🔒 Pagamento 100% seguro</p>
@@ -382,52 +386,31 @@ const Index = () => {
             </div>
           </div>
 
-          <Button variant="hero" size="xl" onClick={handleCTAClick}>
-            Sim, Quero Acesso Vitalício!
+          <Button variant="hero" size="xl" onClick={scrollToPricing}>
+            Ver Opções de Acesso
           </Button>
         </div>
       </section>
+
+      {/* Pricing Plans Section */}
+      <div id="pricing-plans">
+        <PricingPlans />
+      </div>
+
+      {/* Pricing Plans Section */}
+      <div id="pricing-plans">
+        <PricingPlans />
+      </div>
 
       {/* FAQ Section */}
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Perguntas Frequentes</h2>
-            <p className="text-xl text-muted-foreground">Tire suas dúvidas sobre o acesso vitalício</p>
+            <p className="text-xl text-muted-foreground">Tire suas dúvidas sobre o acesso</p>
           </div>
 
           <FAQSection items={faqItems} />
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 bg-gradient-to-br from-card to-background border-t border-border">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Pronto Para Garantir Seu Acesso Vitalício?</h2>
-
-          <p className="text-xl text-muted-foreground mb-8">
-            Aproveite esta oferta especial de 1 dia e invista no seu futuro por apenas R$ 687,00
-          </p>
-
-          <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-6 mb-12 backdrop-blur-sm max-w-2xl mx-auto">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <span className="text-3xl">📚</span>
-              <p className="text-xl font-bold text-accent">BÔNUS INCLUÍDO</p>
-            </div>
-            <p className="text-lg text-foreground text-center">
-              Acesso vitalício às atualizações do Livro{" "}
-              <span className="font-semibold">"Inteligência Artificial para Profissionais do Direito"</span>.
-            </p>
-          </div>
-
-          <Button variant="accent" size="xl" onClick={handleCTAClick} className="mb-6">
-            Garantir Acesso Vitalício Agora
-          </Button>
-
-          <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground">
-            <p>✓ Pagamento 100% Seguro</p>
-            <p>✓ Garantia de 7 Dias</p>
-          </div>
         </div>
       </section>
 
