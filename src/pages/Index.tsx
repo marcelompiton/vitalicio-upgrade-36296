@@ -19,7 +19,7 @@ import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
   // Data de fim da promoção: 12 de janeiro às 23:59 no horário de Brasília
-  const promoEndDate = new Date("2025-01-12T23:59:59-03:00");
+  const promoEndDate = new Date("2026-01-12T23:59:59-03:00");
 
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing-plans");
