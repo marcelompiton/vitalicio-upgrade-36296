@@ -91,19 +91,24 @@ const Index = () => {
         "Com o acesso vitalício, você terá acesso ilimitado a todos os módulos do curso, incluindo futuras atualizações e novos conteúdos, sem precisar pagar mensalidades ou renovações.",
     },
     {
-      question: "Essa promoção é realmente apenas por 2 dias?",
+      question: "Essa promoção é realmente válida até segunda-feira?",
       answer:
-        "Sim! Esta é uma oferta exclusiva e limitada por apenas 2 dias, terminando amanhã à meia-noite (23:59). Após esse horário, a promoção será encerrada definitivamente.",
+        "Sim! Esta é uma oferta exclusiva válida apenas até segunda-feira (12/01) às 23:59. Após esse horário, a promoção será encerrada definitivamente.",
     },
     {
-      question: "O que acontece se eu não aproveitar essa oferta nesses 2 dias?",
+      question: "O que acontece se eu não aproveitar essa oferta?",
       answer:
-        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após amanhã à meia-noite, essa oferta especial não estará mais disponível.",
+        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após segunda-feira às 23:59, essa oferta especial não estará mais disponível.",
     },
     {
       question: "Quem pode aproveitar essa oferta?",
       answer:
-        "Qualquer pessoa interessada em dominar a IA na prática jurídica! Esta é uma oferta especial de 2 dias aberta para todos que desejam investir no seu futuro profissional.",
+        "Esta oferta é exclusiva para alunos do curso! Se você já é aluno, esta é sua oportunidade de garantir acesso vitalício por um valor especial.",
+    },
+    {
+      question: "O que são os Robôs/Assistentes de IA?",
+      answer:
+        "São mais de 70 prompts profissionais prontos para usar no ChatGPT, Claude, Gemini ou Grok. Eles automatizam tarefas como criação de petições, análise de documentos, memoriais, contestações e muito mais. Todos estão inclusos no acesso vitalício.",
     },
     {
       question: "Posso parcelar o pagamento?",
