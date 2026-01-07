@@ -99,7 +99,7 @@ const Index = () => {
     {
       question: "O que acontece se eu não aproveitar essa oferta nesses 2 dias?",
       answer:
-        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 687,00. Após amanhã à meia-noite, essa oferta especial não estará mais disponível.",
+        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após amanhã à meia-noite, essa oferta especial não estará mais disponível.",
     },
     {
       question: "Quem pode aproveitar essa oferta?",
@@ -131,8 +131,8 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center">
-              <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm">
-                <span className="text-accent font-semibold">🔥 Oferta Única de 1 Dia - APENAS 20 VAGAS</span>
+            <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm">
+                <span className="text-accent font-semibold">🔥 Oferta Exclusiva de 2 Dias - ÚLTIMAS VAGAS</span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -145,12 +145,12 @@ const Index = () => {
 
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
                 <span className="block mb-2">
-                  <span className="text-muted-foreground line-through text-lg">De R$ 4.875,00</span>
+                  <span className="text-muted-foreground line-through text-lg">De R$ 987,00</span>
                   <span className="ml-2 text-sm bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">
-                    86% OFF
+                    24% OFF
                   </span>
                 </span>
-                Por apenas <span className="text-accent font-bold text-2xl">R$ 687,00</span>, garanta seu acesso{" "}
+                Por apenas <span className="text-accent font-bold text-2xl">R$ 750,00</span>, garanta seu acesso{" "}
                 <span className="text-foreground font-semibold">vitalício</span> ao curso completo de IA Jurídica
               </p>
 
@@ -279,37 +279,35 @@ const Index = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 bg-background/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">R$ 687 Hoje ou R$ 2.671 Todo Ano?</h2>
-            <p className="text-xl text-muted-foreground">Faça as contas: você economiza +R$ 12.668 em 5 anos!</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Renovar por 1 Ano ou Ter Acesso Vitalício?</h2>
+            <p className="text-xl text-muted-foreground">Compare as opções e escolha a melhor para você!</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <ComparisonCard
               title="Renovação Anual"
-              price="687,00"
+              price="350"
               features={[
-                { text: "Pagamento todo ano", included: true },
-                { text: "Total em 5 anos: R$ 3.435,--", included: true },
-                { text: "Apenas o atual conteúdo", included: true },
-                { text: "Risco de perder o acesso", included: true },
-                { text: "Comunidade vitalícia", included: false },
+                { text: "Acesso por mais 1 ano", included: true },
+                { text: "Precisa renovar anualmente", included: true },
+                { text: "Atualizações durante 1 ano", included: true },
+                { text: "Comunidade por 1 ano", included: true },
                 { text: "Livro de IA incluído", included: false },
-                { text: "App mobile vitalício", included: false },
+                { text: "Acesso vitalício", included: false },
               ]}
             />
 
             <ComparisonCard
-              title="Vitalício por R$ 687"
-              price="687"
+              title="Vitalício por R$ 750"
+              price="750"
               highlighted
               features={[
                 { text: "Pagamento ÚNICO para sempre", included: true },
-                { text: "Economia de +R$ 12.668 em 5 anos", included: true },
-                { text: "Nunca mais pague", included: true },
+                { text: "TODAS as atualizações futuras", included: true },
+                { text: "Nunca mais pague renovação", included: true },
                 { text: "Acesso garantido para sempre", included: true },
                 { text: "Comunidade vitalícia", included: true },
                 { text: "Livro de IA incluído", included: true },
-                { text: "App mobile vitalício", included: true },
               ]}
             />
           </div>
@@ -391,11 +389,6 @@ const Index = () => {
           </Button>
         </div>
       </section>
-
-      {/* Pricing Plans Section */}
-      <div id="pricing-plans">
-        <PricingPlans />
-      </div>
 
       {/* Pricing Plans Section */}
       <div id="pricing-plans">
