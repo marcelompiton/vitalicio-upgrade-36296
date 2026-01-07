@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 import { Countdown } from "@/components/Countdown";
 import { ComparisonCard } from "@/components/ComparisonCard";
 import { BenefitCard } from "@/components/BenefitCard";
@@ -304,12 +306,17 @@ const Index = () => {
           <div className="relative group">
             <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-primary/10 to-accent/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-accent/30 group-hover:border-accent/50 transition-all duration-300">
-              <img
-                src={assistentesRobos}
-                alt="Mais de 70 assistentes de IA para profissionais do direito"
-                className="w-full h-auto"
-              />
+              <Zoom>
+                <img
+                  src={assistentesRobos}
+                  alt="Mais de 70 assistentes de IA para profissionais do direito"
+                  className="w-full h-auto cursor-zoom-in"
+                />
+              </Zoom>
             </div>
+            <p className="text-center text-sm text-muted-foreground mt-3 md:hidden">
+              👆 Toque na imagem para ampliar
+            </p>
           </div>
 
           <div className="mt-8 text-center">
