@@ -88,18 +88,18 @@ const PricingPlan = ({
         ))}
       </ul>
 
-      {/* Hotmart Embedded Widget */}
-      <div className="hotmart-widget-container rounded-xl overflow-hidden">
-        <iframe
-          src={`${hotmartUrl}&widget=true`}
-          width="100%"
-          height="400"
-          frameBorder="0"
-          scrolling="no"
-          className="w-full"
-          title={`Checkout ${title}`}
-        />
-      </div>
+      {/* Hotmart Button */}
+      <a
+        onClick={() => false}
+        href={hotmartUrl}
+        className={`hotmart-fb hotmart__button-checkout block w-full text-center py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 ${
+          highlighted
+            ? "bg-gradient-to-r from-accent to-accent/80 text-accent-foreground hover:shadow-lg hover:scale-105"
+            : "bg-primary text-primary-foreground hover:bg-primary/90"
+        }`}
+      >
+        {highlighted ? "Quero Acesso Vitalício" : "Renovar por +1 Ano"}
+      </a>
     </div>
   );
 };
