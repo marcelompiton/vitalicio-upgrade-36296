@@ -9,6 +9,7 @@ interface PricingPlanProps {
   title: string;
   subtitle: string;
   price: string;
+  originalPrice?: string;
   priceLabel: string;
   features: PlanFeature[];
   hotmartUrl: string;
@@ -21,6 +22,7 @@ const PricingPlan = ({
   title,
   subtitle,
   price,
+  originalPrice,
   priceLabel,
   features,
   hotmartUrl,
@@ -55,6 +57,11 @@ const PricingPlan = ({
       </div>
 
       <div className="text-center mb-6">
+        {originalPrice && (
+          <div className="text-muted-foreground line-through text-lg mb-1">
+            De R$ {originalPrice}
+          </div>
+        )}
         <div className="flex items-baseline justify-center gap-1">
           <span className="text-lg text-muted-foreground">R$</span>
           <span className={`text-4xl md:text-5xl font-bold ${highlighted ? "text-accent" : "text-primary"}`}>
@@ -81,18 +88,17 @@ const PricingPlan = ({
         ))}
       </ul>
 
-      <div className="flex justify-center">
-        <a
-          onClick={() => false}
-          href={hotmartUrl}
-          className={`hotmart-fb hotmart__button-checkout w-full text-center py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 ${
-            highlighted
-              ? "bg-gradient-to-r from-accent to-accent/80 text-accent-foreground hover:shadow-lg hover:scale-105"
-              : "bg-primary text-primary-foreground hover:bg-primary/90"
-          }`}
-        >
-          {highlighted ? "Quero Acesso Vitalício" : "Renovar por +1 Ano"}
-        </a>
+      {/* Hotmart Embedded Widget */}
+      <div className="hotmart-widget-container rounded-xl overflow-hidden">
+        <iframe
+          src={`${hotmartUrl}&widget=true`}
+          width="100%"
+          height="400"
+          frameBorder="0"
+          scrolling="no"
+          className="w-full"
+          title={`Checkout ${title}`}
+        />
       </div>
     </div>
   );
@@ -118,7 +124,7 @@ export const PricingPlans = () => {
     { text: "App mobile VITALÍCIO", included: true },
     { text: "Nunca mais pague renovação", included: true },
     { text: 'Livro "IA para o Direito" INCLUÍDO', included: true },
-    { text: "Economia de +R$ 12.668 em 5 anos", included: true },
+    { text: "Economia garantida a longo prazo", included: true },
   ];
 
   return (
@@ -138,7 +144,7 @@ export const PricingPlans = () => {
           <PricingPlan
             title="Renovação Anual"
             subtitle="Mais 1 ano de acesso"
-            price="687"
+            price="350"
             priceLabel="por mais 1 ano"
             features={oneYearFeatures}
             hotmartUrl="https://pay.hotmart.com/M96848969A?checkoutMode=2&off=ziut525z"
@@ -148,7 +154,8 @@ export const PricingPlans = () => {
           <PricingPlan
             title="Acesso Vitalício"
             subtitle="Pague uma vez, acesse para sempre"
-            price="687"
+            price="750"
+            originalPrice="987"
             priceLabel="pagamento único"
             features={lifetimeFeatures}
             hotmartUrl="https://pay.hotmart.com/S103204336V?checkoutMode=2&off=tb7xto77"
@@ -162,7 +169,7 @@ export const PricingPlans = () => {
           <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 rounded-full px-6 py-3">
             <span className="text-xl">💡</span>
             <p className="text-sm md:text-base font-medium">
-              <span className="text-accent font-bold">Mesmo preço, benefícios muito diferentes!</span>{" "}
+              <span className="text-accent font-bold">Invista R$ 400 a mais e tenha acesso PARA SEMPRE!</span>{" "}
               <span className="text-muted-foreground">O vitalício é o melhor investimento.</span>
             </p>
           </div>
