@@ -176,7 +176,7 @@ const Index = () => {
                     <Users className="w-6 h-6 text-accent" />
                     <p className="text-2xl font-bold text-accent">Apenas 20 vagas</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">⚠️ Vagas limitadas para garantir suporte personalizado</p>
+                  <p className="text-sm text-muted-foreground">⚠️ Vagas limitadas em razão da condição única</p>
                 </div>
               </div>
 
