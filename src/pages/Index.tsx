@@ -3,7 +3,7 @@ import { Countdown } from "@/components/Countdown";
 import { ComparisonCard } from "@/components/ComparisonCard";
 import { BenefitCard } from "@/components/BenefitCard";
 import { FAQSection } from "@/components/FAQItem";
-import { SpotsRemaining } from "@/components/SpotsRemaining";
+
 import { PricingPlans } from "@/components/PricingPlans";
 import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users } from "lucide-react";
 import heroInstructor from "@/assets/hero-instructor.jpg";
@@ -18,12 +18,8 @@ import bookIaDireito from "@/assets/book-ia-direito.png";
 import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
-  // Data de fim da promoção: amanhã à meia-noite no horário de Brasília
-  const today = new Date();
-  const brasiliaTime = toZonedTime(today, "America/Sao_Paulo");
-  const promoEndDate = new Date(brasiliaTime);
-  promoEndDate.setDate(promoEndDate.getDate() + 1); // Adiciona 1 dia
-  promoEndDate.setHours(23, 59, 59, 999);
+  // Data de fim da promoção: 12 de janeiro às 23:59 no horário de Brasília
+  const promoEndDate = new Date("2025-01-12T23:59:59-03:00");
 
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing-plans");
@@ -172,7 +168,13 @@ const Index = () => {
                   <Countdown endDate={promoEndDate} />
                 </div>
 
-                <SpotsRemaining />
+                <div className="bg-card/50 border border-accent/30 rounded-xl p-6 text-center">
+                  <div className="flex items-center justify-center gap-3 mb-2">
+                    <Users className="w-6 h-6 text-accent" />
+                    <p className="text-2xl font-bold text-accent">Apenas 20 vagas</p>
+                  </div>
+                  <p className="text-sm text-muted-foreground">⚠️ Vagas limitadas para garantir suporte personalizado</p>
+                </div>
               </div>
 
               <Button
