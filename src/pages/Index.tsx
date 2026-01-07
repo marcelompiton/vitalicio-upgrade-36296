@@ -15,6 +15,7 @@ import offerExclusive from "@/assets/offer-exclusive.png";
 import aiVanguard from "@/assets/ai-vanguard.png";
 import aiBrain from "@/assets/ai-brain.png";
 import bookIaDireito from "@/assets/book-ia-direito.png";
+import assistentesRobos from "@/assets/assistentes-robos.png";
 import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
@@ -273,6 +274,56 @@ const Index = () => {
               </div>
               <div className="h-1 w-full bg-gradient-to-r from-transparent via-accent/50 to-transparent rounded-full animate-pulse" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Assistentes/Robôs Section */}
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-background to-card relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,hsl(var(--accent)/0.08),transparent_50%)]" />
+        
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 rounded-full px-4 py-2 mb-6">
+              <Zap className="w-4 h-4 text-accent" />
+              <span className="text-sm font-medium text-accent">+70 Assistentes Prontos</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              Robôs de IA Prontos Para
+              <br />
+              <span className="bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))] bg-clip-text text-transparent">
+                Automatizar Seu Trabalho
+              </span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Prompts profissionais testados e otimizados para usar no ChatGPT, Claude, Gemini ou Grok. 
+              Crie petições, analise documentos e agilize sua rotina jurídica.
+            </p>
+          </div>
+
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-primary/10 to-accent/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-accent/30 group-hover:border-accent/50 transition-all duration-300">
+              <img
+                src={assistentesRobos}
+                alt="Mais de 70 assistentes de IA para profissionais do direito"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-muted-foreground mb-4">
+              <span className="text-accent font-semibold">Incluso no acesso vitalício:</span> Todos os assistentes + atualizações futuras
+            </p>
+            <Button
+              variant="accent"
+              size="lg"
+              onClick={scrollToPricing}
+              className="animate-pulse-slow"
+            >
+              Quero Acesso aos Robôs
+            </Button>
           </div>
         </div>
       </section>
