@@ -69,6 +69,9 @@ const PricingPlan = ({
           </span>
         </div>
         <p className="text-sm text-muted-foreground mt-1">{priceLabel}</p>
+        <p className={`text-sm font-semibold mt-2 ${highlighted ? "text-accent" : "text-primary"}`}>
+          ou em até 12x no cartão
+        </p>
       </div>
 
       <ul className="space-y-3 mb-8">
