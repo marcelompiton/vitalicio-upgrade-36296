@@ -21,8 +21,8 @@ import assistentesRobos from "@/assets/assistentes-robos.png";
 import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
-  // Data de fim da promoção: 12 de janeiro às 23:59 no horário de Brasília
-  const promoEndDate = new Date("2026-01-12T23:59:59-03:00");
+  // Data de fim da promoção: 16 de janeiro às 23:59 no horário de Brasília
+  const promoEndDate = new Date("2026-01-16T23:59:59-03:00");
 
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing-plans");
@@ -91,14 +91,14 @@ const Index = () => {
         "Com o acesso vitalício, você terá acesso ilimitado a todos os módulos do curso, incluindo futuras atualizações e novos conteúdos, sem precisar pagar mensalidades ou renovações.",
     },
     {
-      question: "Essa promoção é realmente válida até segunda-feira?",
+      question: "Essa promoção é realmente válida até sexta-feira?",
       answer:
-        "Sim! Esta é uma oferta exclusiva válida apenas até segunda-feira (12/01) às 23:59. Após esse horário, a promoção será encerrada definitivamente.",
+        "Sim! Esta é uma oferta exclusiva válida apenas até sexta-feira (16/01) às 23:59. Após esse horário, a promoção será encerrada definitivamente.",
     },
     {
       question: "O que acontece se eu não aproveitar essa oferta?",
       answer:
-        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após segunda-feira às 23:59, essa oferta especial não estará mais disponível.",
+        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após sexta-feira (16/01) às 23:59, essa oferta especial não estará mais disponível.",
     },
     {
       question: "Quem pode aproveitar essa oferta?",
@@ -434,7 +434,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Não Perca Esta Oportunidade Única</h2>
 
           <p className="text-xl text-muted-foreground mb-8">
-            Esta é uma oferta especial válida até segunda-feira (12/01) às 23:59! O acesso vitalício não estará mais
+            Esta é uma oferta especial válida até sexta-feira (16/01) às 23:59! O acesso vitalício não estará mais
             disponível por este valor promocional. Esta oportunidade não se repetirá.
           </p>
 
@@ -444,8 +444,8 @@ const Index = () => {
               <div className="text-muted-foreground">Vagas limitadas</div>
             </div>
             <div className="bg-card/50 border border-border rounded-xl p-6">
-              <div className="text-4xl font-bold text-primary mb-2">Até Segunda</div>
-              <div className="text-muted-foreground">Termina 12/01 às 23:59</div>
+              <div className="text-4xl font-bold text-primary mb-2">Até Sexta</div>
+              <div className="text-muted-foreground">Termina 16/01 às 23:59</div>
             </div>
           </div>
 
@@ -476,7 +476,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
           <p className="mb-2">© 2025 Curso com IA. Todos os direitos reservados.</p>
-          <p className="text-xs">Oferta única e especial. Válida até segunda-feira (12/01) às 23:59.</p>
+          <p className="text-xs">Oferta única e especial. Válida até sexta-feira (16/01) às 23:59.</p>
         </div>
       </footer>
     </div>
