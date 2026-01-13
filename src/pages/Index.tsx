@@ -150,7 +150,7 @@ const Index = () => {
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
                 <span className="block mb-3">
                   <span className="text-destructive font-bold text-sm px-3 py-1.5 bg-destructive/10 rounded-full inline-block">
-                    ⚠️ OPÇÃO INDISPONÍVEL FORA DA PROMOÇÃO
+                    ⚠️ OPÇÃO INDISPONÍVEL - ELA APENAS ESTÁ À VENDA AGORA
                   </span>
                 </span>
                 Por apenas <span className="text-accent font-bold text-2xl">R$ 750,00</span>, garanta seu acesso{" "}
