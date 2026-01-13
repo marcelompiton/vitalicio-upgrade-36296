@@ -242,6 +242,11 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pricing Plans Section - After Video */}
+      <div id="pricing-plans">
+        <PricingPlans />
+      </div>
+
       {/* Immersion Section */}
       <section className="py-8 md:py-12 px-4 bg-gradient-to-br from-card via-background to-card relative overflow-hidden">
         {/* Animated background effects */}
@@ -455,10 +460,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Pricing Plans Section */}
-      <div id="pricing-plans">
-        <PricingPlans />
-      </div>
 
       {/* FAQ Section */}
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
