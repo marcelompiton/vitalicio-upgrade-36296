@@ -136,7 +136,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center">
             <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm">
-                <span className="text-accent font-semibold">🔥 Oferta Exclusiva de 2 Dias - ÚLTIMAS VAGAS</span>
+                <span className="text-accent font-semibold">🔥 Oferta Exclusiva para os Alunos</span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
