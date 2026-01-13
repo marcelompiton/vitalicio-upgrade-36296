@@ -148,10 +148,9 @@ const Index = () => {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                <span className="block mb-2">
-                  <span className="text-muted-foreground line-through text-lg">De R$ 987,00</span>
-                  <span className="ml-2 text-sm bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">
-                    24% OFF
+                <span className="block mb-3">
+                  <span className="text-destructive font-bold text-sm px-3 py-1.5 bg-destructive/10 rounded-full inline-block">
+                    ⚠️ OPÇÃO INDISPONÍVEL FORA DA PROMOÇÃO
                   </span>
                 </span>
                 Por apenas <span className="text-accent font-bold text-2xl">R$ 750,00</span>, garanta seu acesso{" "}
