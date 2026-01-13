@@ -93,8 +93,9 @@ const PricingPlan = ({
 
       {/* Hotmart Button */}
       <a
-        onClick={() => false}
         href={hotmartUrl}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`hotmart-fb hotmart__button-checkout block w-full text-center py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 ${
           highlighted
             ? "bg-gradient-to-r from-accent to-accent/80 text-accent-foreground hover:shadow-lg hover:scale-105"
