@@ -59,7 +59,7 @@ const PricingPlan = ({
       <div className="text-center mb-6">
         {originalPrice && (
           <div className="text-destructive font-bold text-sm mb-2 px-3 py-1 bg-destructive/10 rounded-full inline-block">
-            ⚠️ OPÇÃO INDISPONÍVEL FORA DA PROMOÇÃO
+            ⚠️ OPÇÃO INDISPONÍVEL - ELA APENAS ESTÁ À VENDA AGORA
           </div>
         )}
         <div className="flex items-baseline justify-center gap-1">
