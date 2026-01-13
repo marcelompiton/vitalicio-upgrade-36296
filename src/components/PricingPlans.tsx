@@ -151,7 +151,7 @@ export const PricingPlans = () => {
             price="350"
             priceLabel="por mais 1 ano"
             features={oneYearFeatures}
-            hotmartUrl="https://pay.hotmart.com/M96848969A?checkoutMode=2&off=ziut525z"
+            hotmartUrl="https://pay.hotmart.com/M96848969A?off=ziut525z"
             icon={<Clock className="w-6 h-6 text-primary" />}
           />
 
@@ -162,7 +162,7 @@ export const PricingPlans = () => {
             originalPrice="987"
             priceLabel="pagamento único"
             features={lifetimeFeatures}
-            hotmartUrl="https://pay.hotmart.com/S103204336V?checkoutMode=2&off=tb7xto77"
+            hotmartUrl="https://pay.hotmart.com/S103204336V?off=tb7xto77"
             highlighted
             badge="⭐ MELHOR OPÇÃO"
             icon={<Star className="w-6 h-6 text-accent" />}
