@@ -8,8 +8,8 @@ import { FAQSection } from "@/components/FAQItem";
 
 import { PricingPlans } from "@/components/PricingPlans";
 import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users } from "lucide-react";
-import heroInstructor from "@/assets/hero-instructor.jpg";
-import coursePlatform from "@/assets/course-platform.png";
+import heroInstructor from "@/assets/hero-instructor.webp";
+import coursePlatform from "@/assets/course-platform.webp";
 import courseClassroom from "@/assets/course-classroom.jpg";
 import courseImmersion from "@/assets/course-immersion.png";
 import appCommunity from "@/assets/app-community.png";
@@ -17,7 +17,7 @@ import offerExclusive from "@/assets/offer-exclusive.png";
 import aiVanguard from "@/assets/ai-vanguard.png";
 import aiBrain from "@/assets/ai-brain.png";
 import bookIaDireito from "@/assets/book-ia-direito.png";
-import assistentesRobos from "@/assets/assistentes-robos.png";
+import assistentesRobos from "@/assets/assistentes-robos.webp";
 import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
