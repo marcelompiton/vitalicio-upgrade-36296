@@ -137,86 +137,107 @@ const Index = () => {
 
 
       {/* Hero Section */}
-      <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-[var(--gradient-hero)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,hsl(var(--primary)/0.1),transparent)]" />
-        <div className="absolute inset-0 opacity-10">
-          <img src={heroInstructor} alt="" className="w-full h-full object-cover" />
+      <section className="relative min-h-screen flex items-center pt-8 pb-16 md:pt-12 md:pb-24 px-4 overflow-hidden">
+        {/* Full-width background image */}
+        <div className="absolute inset-0">
+          <img 
+            src={heroInstructor} 
+            alt="" 
+            className="w-full h-full object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="text-center">
-            <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm animate-float-slow">
-                <span className="text-accent font-semibold">🔥 Oferta Exclusiva para os Alunos</span>
-              </div>
+        <div className="relative max-w-7xl mx-auto w-full">
+          <div className="max-w-2xl">
+            {/* Badge */}
+            <div className="inline-block bg-accent/20 border-2 border-accent/40 rounded-full px-5 py-2 mb-6 backdrop-blur-sm animate-float-slow">
+              <span className="text-accent font-bold text-sm">🔥 Oferta Exclusiva para Alunos</span>
+            </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Torne-se um Aluno
-                <br />
-                <span className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--primary-glow))] bg-clip-text text-transparent">
-                  Vitalício Agora
-                </span>
-              </h1>
+            {/* Headline simplificada */}
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black mb-4 leading-[1.1]">
+              Pare de Renovar.
+              <br />
+              <span className="bg-gradient-to-r from-[hsl(var(--primary))] via-[hsl(var(--primary-glow))] to-[hsl(var(--primary))] bg-clip-text text-transparent">
+                Compre Uma Vez.
+              </span>
+            </h1>
 
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                <span className="block mb-3">
-                  <span className="text-destructive font-bold text-sm px-3 py-1.5 bg-destructive/10 rounded-full inline-block">
-                    ⚠️ OPÇÃO INDISPONÍVEL - ELA APENAS ESTÁ À VENDA AGORA
-                  </span>
-                </span>
-                Por apenas <span className="text-accent font-bold text-2xl">R$ 750,00</span>, garanta seu acesso{" "}
-                <span className="text-foreground font-semibold">vitalício</span> ao curso completo de IA Jurídica, aos robôs e prompts sempre atualizados
+            {/* Preço em destaque */}
+            <div className="mb-6">
+              <p className="text-muted-foreground text-lg mb-2">
+                <span className="line-through text-destructive/70">R$ 1.750</span>
+                <span className="text-sm ml-2">(5 anos renovando)</span>
               </p>
-
-              <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-4 mb-8 backdrop-blur-sm">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-2xl">📚</span>
-                  <p className="font-bold text-accent">BÔNUS EXCLUSIVO</p>
-                </div>
-                <p className="text-base text-foreground">
-                  + Acesso vitalício ao livro{" "}
-                  <span className="font-semibold">"Inteligência Artificial para Profissionais do Direito"</span>. Receba
-                  sempre a última versão atualizada!
-                </p>
+              <div className="flex items-baseline gap-3">
+                <span className="text-5xl md:text-7xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent)/0.5)]">
+                  R$ 750
+                </span>
+                <span className="text-xl text-muted-foreground font-medium">uma vez, para sempre</span>
               </div>
+            </div>
 
-              <div className="mb-8 space-y-6">
-                <div>
-                  <p className="text-sm text-muted-foreground mb-4 uppercase tracking-wider">A promoção encerra em:</p>
-                  <Countdown endDate={promoEndDate} />
+            {/* Aviso de escassez */}
+            <div className="inline-block bg-destructive/10 border border-destructive/30 rounded-lg px-4 py-2 mb-8">
+              <span className="text-destructive font-bold text-sm">
+                ⚠️ OPÇÃO NORMALMENTE INDISPONÍVEL - Apenas agora à venda
+              </span>
+            </div>
+
+            {/* Bônus em destaque */}
+            <div className="relative group mb-8">
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent via-primary to-accent rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity animate-pulse" />
+              <div className="relative bg-gradient-to-br from-card/95 to-card/80 backdrop-blur-xl border-2 border-accent/50 rounded-2xl p-5 overflow-hidden">
+                <div className="absolute top-0 right-0 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-bl-lg">
+                  GRÁTIS
                 </div>
-
-                <div className="bg-card/50 border border-accent/30 rounded-xl p-6 text-center">
-                  <div className="flex items-center justify-center gap-3 mb-2">
-                    <Users className="w-6 h-6 text-accent" />
-                    <p className="text-2xl font-bold text-accent">Apenas 35 vagas</p>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-16 h-20 rounded-lg overflow-hidden shadow-lg border border-accent/30">
+                    <img src={bookIaDireito} alt="Livro IA Direito" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-sm text-muted-foreground">⚠️ Vagas limitadas em razão da condição única</p>
+                  <div>
+                    <p className="font-black text-accent text-lg mb-1">📚 BÔNUS EXCLUSIVO</p>
+                    <p className="text-foreground font-medium">
+                      Livro <span className="text-primary">"IA para Profissionais do Direito"</span>
+                    </p>
+                    <p className="text-sm text-muted-foreground">Sempre atualizado, incluído no vitalício</p>
+                  </div>
                 </div>
               </div>
-
-              <Button
-                variant="accent"
-                size="xl"
-                onClick={scrollToPricing}
-                className="mb-4 animate-pulse-slow w-full md:w-auto"
-              >
-                Ver Opções de Acesso
-              </Button>
-
-              <p className="text-sm text-muted-foreground mt-4">⚡ Apenas 35 vagas • 🔒 Pagamento 100% seguro</p>
             </div>
 
-            <div className="relative hidden md:block">
-              <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-glow)] border border-primary/20">
-                <img
-                  src={heroInstructor}
-                  alt="Professor Marcelo Piton ensinando IA para prática jurídica"
-                  className="w-full h-auto"
-                />
+            {/* Countdown melhorado */}
+            <div className="mb-8">
+              <p className="text-sm text-accent font-semibold mb-3 uppercase tracking-widest">⏰ Oferta encerra em:</p>
+              <Countdown endDate={promoEndDate} />
+            </div>
+
+            {/* Vagas */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="flex items-center gap-2 bg-card/50 border border-accent/30 rounded-full px-4 py-2">
+                <Users className="w-5 h-5 text-accent" />
+                <span className="font-bold text-accent">35 vagas</span>
               </div>
+              <span className="text-sm text-muted-foreground">• Condição única e limitada</span>
             </div>
+
+            {/* CTA */}
+            <Button
+              variant="accent"
+              size="xl"
+              onClick={scrollToPricing}
+              className="w-full sm:w-auto text-lg px-10 shadow-[0_0_40px_hsl(var(--accent)/0.4)] hover:shadow-[0_0_60px_hsl(var(--accent)/0.6)] transition-all"
+            >
+              Garantir Meu Acesso Vitalício
+            </Button>
+
+            <p className="text-sm text-muted-foreground mt-4 flex items-center gap-4">
+              <span>🔒 Pagamento seguro</span>
+              <span>•</span>
+              <span>7 dias de garantia</span>
+            </p>
           </div>
         </div>
       </section>
