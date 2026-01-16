@@ -5,6 +5,7 @@ import { Countdown } from "@/components/Countdown";
 import { ComparisonCard } from "@/components/ComparisonCard";
 import { BenefitCard } from "@/components/BenefitCard";
 import { FAQSection } from "@/components/FAQItem";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 
 import { PricingPlans } from "@/components/PricingPlans";
 import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users } from "lucide-react";
@@ -382,6 +383,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Benefits Section */}
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
