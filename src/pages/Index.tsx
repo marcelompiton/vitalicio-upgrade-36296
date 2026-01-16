@@ -6,9 +6,13 @@ import { ComparisonCard } from "@/components/ComparisonCard";
 import { BenefitCard } from "@/components/BenefitCard";
 import { FAQSection } from "@/components/FAQItem";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { ScrollProgressBar } from "@/components/ScrollProgressBar";
+import { StickyCTA } from "@/components/StickyCTA";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 import { PricingPlans } from "@/components/PricingPlans";
-import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users } from "lucide-react";
+import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users, Sparkles, Bot } from "lucide-react";
 import heroInstructor from "@/assets/hero-instructor.jpg";
 import coursePlatform from "@/assets/course-platform.webp";
 import courseClassroom from "@/assets/course-classroom.jpg";
@@ -125,6 +129,25 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Scroll Progress Bar */}
+      <ScrollProgressBar />
+
+      {/* Sticky CTA */}
+      <StickyCTA onClick={scrollToPricing} />
+
+      {/* Floating decorative elements */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute top-20 left-10 text-accent/20 animate-float">
+          <Sparkles className="w-6 h-6" />
+        </div>
+        <div className="absolute top-40 right-20 text-primary/20 animate-float-delay-1">
+          <Bot className="w-8 h-8" />
+        </div>
+        <div className="absolute bottom-40 left-20 text-accent/15 animate-float-delay-2">
+          <Zap className="w-5 h-5" />
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-[var(--gradient-hero)]" />
@@ -136,7 +159,7 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center">
-            <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm">
+            <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm animate-float-slow">
                 <span className="text-accent font-semibold">🔥 Oferta Exclusiva para os Alunos</span>
               </div>
 
@@ -295,53 +318,61 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,hsl(var(--accent)/0.08),transparent_50%)]" />
         
         <div className="max-w-7xl mx-auto relative">
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 rounded-full px-4 py-2 mb-6">
-              <Zap className="w-4 h-4 text-accent" />
-              <span className="text-sm font-medium text-accent">+70 Assistentes Prontos</span>
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-float">
+                <Zap className="w-4 h-4 text-accent" />
+                <span className="text-sm font-medium text-accent">
+                  +<AnimatedCounter end={72} className="font-bold" /> Assistentes Prontos
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">
+                Robôs de IA Prontos Para
+                <br />
+                <span className="bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))] bg-clip-text text-transparent highlight-underline">
+                  Automatizar Seu Trabalho
+                </span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Prompts profissionais testados e otimizados para usar no ChatGPT, Claude, Gemini ou Grok. 
+                Crie petições, analise documentos e agilize sua rotina jurídica.
+              </p>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Robôs de IA Prontos Para
-              <br />
-              <span className="bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))] bg-clip-text text-transparent">
-                Automatizar Seu Trabalho
-              </span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Prompts profissionais testados e otimizados para usar no ChatGPT, Claude, Gemini ou Grok. 
-              Crie petições, analise documentos e agilize sua rotina jurídica.
-            </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-primary/10 to-accent/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-accent/30 group-hover:border-accent/50 transition-all duration-300">
-              <Zoom>
-                <img
-                  src={assistentesRobos}
-                  alt="Mais de 70 assistentes de IA para profissionais do direito"
-                  className="w-full h-auto cursor-zoom-in"
-                />
-              </Zoom>
+          <ScrollReveal animation="scale" delay={200}>
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-primary/10 to-accent/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-accent/30 group-hover:border-accent/50 transition-all duration-300">
+                <Zoom>
+                  <img
+                    src={assistentesRobos}
+                    alt="Mais de 70 assistentes de IA para profissionais do direito"
+                    className="w-full h-auto cursor-zoom-in"
+                  />
+                </Zoom>
+              </div>
+              <p className="text-center text-sm text-muted-foreground mt-3 md:hidden">
+                👆 Toque na imagem para ampliar
+              </p>
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-3 md:hidden">
-              👆 Toque na imagem para ampliar
-            </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="mt-8 text-center">
-            <p className="text-muted-foreground mb-4">
-              <span className="text-accent font-semibold">Incluso no acesso vitalício:</span> Todos os assistentes + atualizações futuras
-            </p>
-            <Button
-              variant="accent"
-              size="lg"
-              onClick={scrollToPricing}
-              className="animate-pulse-slow"
-            >
-              Quero Acesso aos Robôs
-            </Button>
-          </div>
+          <ScrollReveal delay={400}>
+            <div className="mt-8 text-center">
+              <p className="text-muted-foreground mb-4">
+                <span className="text-accent font-semibold animate-text-glow">Incluso no acesso vitalício:</span> Todos os assistentes + atualizações futuras
+              </p>
+              <Button
+                variant="accent"
+                size="lg"
+                onClick={scrollToPricing}
+                className="animate-pulse-glow"
+              >
+                Quero Acesso aos Robôs
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -435,31 +466,50 @@ const Index = () => {
       {/* Urgency Section */}
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 bg-gradient-to-br from-card to-card/50 border-y border-border">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block bg-accent/10 border border-accent rounded-full px-6 py-2 mb-6 animate-pulse">
-            <span className="text-accent font-semibold">⏰ Tempo Limitado</span>
-          </div>
-
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Não Perca Esta Oportunidade Única</h2>
-
-          <p className="text-xl text-muted-foreground mb-8">
-            Esta é uma oferta especial válida até quarta-feira (21/01) às 23:59! O acesso vitalício não estará mais
-            disponível por este valor promocional. Esta oportunidade não se repetirá.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
-            <div className="bg-card/50 border border-border rounded-xl p-6">
-              <div className="text-4xl font-bold text-primary mb-2">35</div>
-              <div className="text-muted-foreground">Vagas limitadas</div>
+          <ScrollReveal>
+            <div className="inline-block bg-accent/10 border border-accent rounded-full px-6 py-2 mb-6 animate-pulse-glow">
+              <span className="text-accent font-semibold">⏰ Tempo Limitado</span>
             </div>
-            <div className="bg-card/50 border border-border rounded-xl p-6">
-              <div className="text-4xl font-bold text-primary mb-2">Até Quarta</div>
-              <div className="text-muted-foreground">Termina 21/01 às 23:59</div>
-            </div>
-          </div>
 
-          <Button variant="hero" size="xl" onClick={scrollToPricing}>
-            Ver Opções de Acesso
-          </Button>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Não Perca Esta <span className="highlight-underline text-accent">Oportunidade Única</span>
+            </h2>
+
+            <p className="text-xl text-muted-foreground mb-8">
+              Esta é uma oferta especial válida até quarta-feira (21/01) às 23:59! O acesso vitalício não estará mais
+              disponível por este valor promocional. Esta oportunidade não se repetirá.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
+              <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300">
+                <div className="text-4xl font-bold text-primary mb-2">
+                  <AnimatedCounter end={35} />
+                </div>
+                <div className="text-muted-foreground">Vagas limitadas</div>
+                {/* Progress bar for spots */}
+                <div className="mt-3">
+                  <div className="h-2 bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-gradient-to-r from-accent to-primary rounded-full animate-pulse"
+                      style={{ width: '100%' }}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="text-4xl font-bold text-primary mb-2">Até Quarta</div>
+                <div className="text-muted-foreground">Termina 21/01 às 23:59</div>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={400}>
+            <Button variant="hero" size="xl" onClick={scrollToPricing} className="animate-pulse-glow">
+              Ver Opções de Acesso
+            </Button>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -467,12 +517,16 @@ const Index = () => {
       {/* FAQ Section */}
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Perguntas Frequentes</h2>
-            <p className="text-xl text-muted-foreground">Tire suas dúvidas sobre o acesso</p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">Perguntas Frequentes</h2>
+              <p className="text-xl text-muted-foreground">Tire suas dúvidas sobre o acesso</p>
+            </div>
+          </ScrollReveal>
 
-          <FAQSection items={faqItems} />
+          <ScrollReveal delay={200}>
+            <FAQSection items={faqItems} />
+          </ScrollReveal>
         </div>
       </section>
 
