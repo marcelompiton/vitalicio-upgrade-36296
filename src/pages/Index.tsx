@@ -155,7 +155,7 @@ const Index = () => {
                   </span>
                 </span>
                 Por apenas <span className="text-accent font-bold text-2xl">R$ 750,00</span>, garanta seu acesso{" "}
-                <span className="text-foreground font-semibold">vitalício</span> ao curso completo de IA Jurídica
+                <span className="text-foreground font-semibold">vitalício</span> ao curso completo de IA Jurídica, aos robôs e prompts sempre atualizados
               </p>
 
               <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-4 mb-8 backdrop-blur-sm">
