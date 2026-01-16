@@ -8,7 +8,7 @@ import { FAQSection } from "@/components/FAQItem";
 
 import { PricingPlans } from "@/components/PricingPlans";
 import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users } from "lucide-react";
-import heroInstructor from "@/assets/hero-instructor.webp";
+import heroInstructor from "@/assets/hero-instructor.jpg";
 import coursePlatform from "@/assets/course-platform.webp";
 import courseClassroom from "@/assets/course-classroom.jpg";
 import courseImmersion from "@/assets/course-immersion.png";
