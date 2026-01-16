@@ -135,18 +135,6 @@ const Index = () => {
       {/* Sticky CTA */}
       <StickyCTA onClick={scrollToPricing} />
 
-      {/* Floating decorative elements */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-20 left-10 text-accent/20 animate-float">
-          <Sparkles className="w-6 h-6" />
-        </div>
-        <div className="absolute top-40 right-20 text-primary/20 animate-float-delay-1">
-          <Bot className="w-8 h-8" />
-        </div>
-        <div className="absolute bottom-40 left-20 text-accent/15 animate-float-delay-2">
-          <Zap className="w-5 h-5" />
-        </div>
-      </div>
 
       {/* Hero Section */}
       <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 px-4 overflow-hidden">
