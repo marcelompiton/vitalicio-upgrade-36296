@@ -25,6 +25,7 @@ export const StickyCTA = ({ onClick }: StickyCTAProps) => {
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-background via-background to-transparent pointer-events-none">
       <div className="max-w-2xl mx-auto pointer-events-auto">
         <div className="bg-card/95 backdrop-blur-lg border border-accent/30 rounded-2xl p-4 shadow-2xl shadow-accent/20">
+          <p className="text-center text-sm font-medium text-accent mb-3">🚀 Lidere a mudança — Garanta o Vitalício</p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
               variant="accent"
