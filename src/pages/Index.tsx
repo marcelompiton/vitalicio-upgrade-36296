@@ -152,13 +152,12 @@ const Index = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                IA no Direito é
+                Lidere Para Sempre:
                 <br />
                 <span className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--primary-glow))] bg-clip-text text-transparent">
-                  Inevitável
+                  Garanta o Seu Acesso Vitalício
                 </span>
               </h1>
-              
               <p className="text-lg md:text-xl text-foreground font-medium mb-4">
                 A questão é: você <span className="text-accent font-bold">lidera</span> ou <span className="text-muted-foreground">corre atrás</span>?
               </p>
