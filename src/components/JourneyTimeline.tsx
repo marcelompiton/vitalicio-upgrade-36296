@@ -134,7 +134,7 @@ export const JourneyTimeline = ({ onCtaClick }: JourneyTimelineProps) => {
                 onClick={onCtaClick}
                 className="animate-pulse-slow"
               >
-                Completar Minha Jornada
+                Garantir o Meu Lugar
               </Button>
             </div>
           </div>
