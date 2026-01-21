@@ -26,8 +26,8 @@ import assistentesRobos from "@/assets/assistentes-robos.webp";
 import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
-  // Data de fim da promoção: 21 de janeiro às 23:59 no horário de Brasília
-  const promoEndDate = new Date("2026-01-21T23:59:59-03:00");
+  // Data de fim da promoção: 23 de janeiro (quinta-feira) às 23:59 no horário de Brasília
+  const promoEndDate = new Date("2026-01-23T23:59:59-03:00");
 
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing-plans");
@@ -96,14 +96,14 @@ const Index = () => {
         "Com o acesso vitalício, você terá acesso ilimitado a todos os módulos do curso, incluindo futuras atualizações e novos conteúdos, sem precisar pagar mensalidades ou renovações.",
     },
     {
-      question: "Essa promoção é realmente válida até quarta-feira?",
+      question: "Essa promoção é realmente válida até quinta-feira?",
       answer:
-        "Sim! Esta é uma oferta exclusiva válida apenas até quarta-feira (21/01) às 23:59. Após esse horário, a promoção será encerrada definitivamente.",
+        "Sim! Esta é uma oferta exclusiva válida apenas até quinta-feira (23/01) às 23:59. Após esse horário, a promoção será encerrada definitivamente.",
     },
     {
       question: "O que acontece se eu não aproveitar essa oferta?",
       answer:
-        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após quarta-feira (21/01) às 23:59, essa oferta especial não estará mais disponível.",
+        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após quinta-feira (23/01) às 23:59, essa oferta especial não estará mais disponível.",
     },
     {
       question: "Quem pode aproveitar essa oferta?",
