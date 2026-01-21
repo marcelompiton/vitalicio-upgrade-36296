@@ -193,9 +193,9 @@ const Index = () => {
                 <div className="bg-card/50 border border-accent/30 rounded-xl p-6 text-center">
                   <div className="flex items-center justify-center gap-3 mb-2">
                     <Users className="w-6 h-6 text-accent" />
-                    <p className="text-2xl font-bold text-accent">+15 vagas liberadas!</p>
+                    <p className="text-2xl font-bold text-accent">Oferta por tempo limitado</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">⚠️ 35 colegas seus já garantiram. Restam apenas 15.</p>
+                  <p className="text-sm text-muted-foreground">Exclusivo para alunos do curso</p>
                 </div>
               </div>
 
