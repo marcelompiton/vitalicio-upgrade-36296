@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import { toZonedTime } from 'date-fns-tz';
 
 export const SpotsRemaining = () => {
-  const totalSpots = 20;
-  const initialSpots = 16; // Começa com 16 vagas disponíveis
+  const totalSpots = 15;
+  const initialSpots = 15; // 35 vagas esgotaram, abertas mais 15
   
   const calculateSpotsRemaining = () => {
     // Horário de início: 08:30 de Brasília (hoje)
