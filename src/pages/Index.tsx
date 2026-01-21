@@ -41,51 +41,50 @@ const Index = () => {
       icon: Infinity,
       title: "Acesso vitalício aos Robôs do Professor Marcelo",
       description:
-        "Imagine nunca mais perder horas escrevendo do zero. Esses assistentes já ajudaram advogados a transformar 8 horas de trabalho em 45 minutos. Agora é sua vez.",
+        "Tenha acesso vitalício aos assistentes que fazem toda a diferença ao trabalhar com ferramentas de inteligência artificial.",
     },
     {
       icon: TrendingUp,
       title: "Aplicativo para celular e Comunidade Exclusiva para Sempre",
       description:
-        "Advogados isolados estagnam. Na nossa comunidade, profissionais trocam prompts, resolvem dúvidas em minutos e criam parcerias. Você nunca mais vai enfrentar a IA sozinho.",
+        "Acesso vitalício ao nosso aplicativo para celular exclusivo e à comunidade de alunos. Compartilhe experiências, tire dúvidas e crie conexões profissionais que duram para toda a vida.",
       image: appCommunity,
     },
     {
       icon: Zap,
       title: "Todas as Atualizações Futuras",
       description:
-        "A IA evolui todo mês. Quem fica parado, fica para trás. Você receberá cada nova ferramenta, módulo e estratégia automaticamente — sem pagar nada a mais, para sempre.",
+        "Receba automaticamente todo novo conteúdo, módulos, funcionalidades do app e melhorias sem pagar nada a mais, para sempre.",
     },
     {
       icon: Award,
       title: "Economia Garantida em 2 Anos",
       description:
-        "Faça as contas: renovar todo ano custa R$ 350. Em 3 anos, são R$ 1.050. Com o vitalício por R$ 750, você economiza e ainda ganha tranquilidade eterna.",
+        "Em apenas 2 anos, o acesso vitalício já se paga completamente! Depois disso, são anos de economia e acesso garantido sem preocupações.",
     },
     {
       icon: Shield,
       title: "Na Vanguarda da IA Jurídica",
-      description:
-        "Enquanto outros advogados ainda tentam entender o ChatGPT, você já estará usando as ferramentas mais avançadas do mercado. Essa vantagem competitiva vale mais que qualquer certificado.",
+      description: "Esteja sempre na vanguarda do uso da inteligência artificial na rotina jurídica.",
       image: aiVanguard,
     },
     {
       icon: Clock,
       title: "Aprenda no Seu Ritmo",
       description:
-        "Sua rotina é imprevisível. Audiências, prazos, emergências. Com acesso vitalício, você estuda quando puder — seja às 6h da manhã ou meia-noite. Sem pressão, sem culpa.",
+        "Sem pressão de tempo ou data de vencimento. Acesse o conteúdo quando quiser, quantas vezes quiser, para sempre.",
     },
     {
       icon: Users,
       title: "Evolução Profissional Contínua",
       description:
-        "O advogado que domina IA hoje será o líder de amanhã. Você não está comprando um curso — está investindo na versão mais competitiva de você mesmo.",
+        "Faça parte de um seleto grupo de alunos que sempre vai estar em contato e evoluindo na sua vida profissional.",
     },
     {
       icon: Award,
       title: 'Livro "Inteligência Artificial para Profissionais do Direito"',
       description:
-        "Um guia completo escrito pelo Professor Marcelo. Enquanto outros pagam separado, você recebe todas as edições atualizadas — incluído no seu acesso vitalício.",
+        "Receba acesso vitalício ao livro digital, sempre que lançado! Um guia completo sobre IA jurídica - totalmente incluído no seu acesso vitalício.",
       image: bookIaDireito,
     },
   ];
@@ -153,10 +152,10 @@ const Index = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                De Advogado Sobrecarregado
+                Torne-se um Aluno
                 <br />
                 <span className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--primary-glow))] bg-clip-text text-transparent">
-                  a Profissional do Futuro
+                  Vitalício Agora
                 </span>
               </h1>
 
@@ -166,8 +165,8 @@ const Index = () => {
                     ⚠️ OPÇÃO INDISPONÍVEL - ELA APENAS ESTÁ À VENDA AGORA
                   </span>
                 </span>
-                Advogados que dominam IA estão reduzindo horas de trabalho para minutos. Por apenas <span className="text-accent font-bold text-2xl">R$ 750,00</span>, junte-se a eles — com acesso{" "}
-                <span className="text-foreground font-semibold">vitalício</span> ao curso, robôs e atualizações para sempre.
+                Por apenas <span className="text-accent font-bold text-2xl">R$ 750,00</span>, garanta seu acesso{" "}
+                <span className="text-foreground font-semibold">vitalício</span> ao curso completo de IA Jurídica, aos robôs e prompts sempre atualizados
               </p>
 
               <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-4 mb-8 backdrop-blur-sm">
@@ -267,16 +266,13 @@ const Index = () => {
 
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Você Antes: Perdido no ChatGPT
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Uma Imersão Completa Criada
               <br />
               <span className="bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))] bg-clip-text text-transparent">
-                Você Depois: Dominando a IA Jurídica
+                Especialmente Para Profissionais do Direito
               </span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Uma imersão completa que transforma advogados confusos em profissionais que usam IA como vantagem competitiva
-            </p>
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-primary/20 mb-8 animate-scale-in">
@@ -319,15 +315,15 @@ const Index = () => {
                 </span>
               </div>
               <h2 className="text-3xl md:text-5xl font-bold mb-4">
-                "Passei 4 horas escrevendo uma petição..."
+                Robôs de IA Prontos Para
                 <br />
                 <span className="bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--primary))] bg-clip-text text-transparent highlight-underline">
-                  "Agora faço em 20 minutos."
+                  Automatizar Seu Trabalho
                 </span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Essa é a história de dezenas de alunos. Com +72 robôs prontos para ChatGPT, Claude, Gemini ou Grok, 
-                você automatiza petições, análises e contestações — enquanto outros ainda digitam do zero.
+                Prompts profissionais testados e otimizados para usar no ChatGPT, Claude, Gemini ou Grok. 
+                Crie petições, analise documentos e agilize sua rotina jurídica.
               </p>
             </div>
           </ScrollReveal>
@@ -372,8 +368,8 @@ const Index = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 bg-background/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">A Escolha Que Define Seu Futuro</h2>
-            <p className="text-xl text-muted-foreground">Renovar todo ano preocupado... ou resolver isso de uma vez por todas?</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Renovar por 1 Ano ou Ter Acesso Vitalício?</h2>
+            <p className="text-xl text-muted-foreground">Compare as opções e escolha a melhor para você!</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -414,8 +410,8 @@ const Index = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">O Que Muda na Sua Vida Profissional?</h2>
-            <p className="text-xl text-muted-foreground">Cada benefício é uma história de transformação que você vai viver</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Por Que Fazer o VITALÍCIO Agora?</h2>
+            <p className="text-xl text-muted-foreground">Todos os benefícios que você vai conquistar</p>
           </div>
 
           {/* Course Platform Image */}
@@ -464,12 +460,12 @@ const Index = () => {
             </div>
 
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Daqui a 1 Ano, Você Vai Olhar Para Trás <span className="highlight-underline text-accent">E Se Arrepender?</span>
+              Não Perca Esta <span className="highlight-underline text-accent">Oportunidade Única</span>
             </h2>
 
             <p className="text-xl text-muted-foreground mb-8">
-              Dois caminhos: continuar na rotina exaustiva, ou dominar a IA e transformar sua carreira. 
-              Essa oferta especial termina quinta-feira (23/01) às 23:59. O acesso vitalício por R$ 750 não vai se repetir.
+              Esta é uma oferta especial válida até quinta-feira (23/01) às 23:59! O acesso vitalício não estará mais
+              disponível por este valor promocional. Esta oportunidade não se repetirá.
             </p>
           </ScrollReveal>
 
