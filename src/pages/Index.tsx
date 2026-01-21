@@ -190,9 +190,9 @@ const Index = () => {
                 <div className="bg-card/50 border border-accent/30 rounded-xl p-6 text-center">
                   <div className="flex items-center justify-center gap-3 mb-2">
                     <Users className="w-6 h-6 text-accent" />
-                    <p className="text-2xl font-bold text-accent">Apenas 35 vagas</p>
+                    <p className="text-2xl font-bold text-accent">+15 vagas liberadas!</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">⚠️ Vagas limitadas em razão da condição única</p>
+                  <p className="text-sm text-muted-foreground">⚠️ As 35 vagas esgotaram! Últimas 15 liberadas</p>
                 </div>
               </div>
 
@@ -205,7 +205,7 @@ const Index = () => {
                 Ver Opções de Acesso
               </Button>
 
-              <p className="text-sm text-muted-foreground mt-4">⚡ Apenas 35 vagas • 🔒 Pagamento 100% seguro</p>
+              <p className="text-sm text-muted-foreground mt-4">⚡ 35 esgotaram • +15 liberadas • 🔒 Pagamento 100% seguro</p>
             </div>
 
             <div className="relative hidden md:block">
@@ -473,15 +473,16 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
               <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300">
                 <div className="text-4xl font-bold text-primary mb-2">
-                  <AnimatedCounter end={35} />
+                  <AnimatedCounter end={15} />
                 </div>
-                <div className="text-muted-foreground">Vagas limitadas</div>
+                <div className="text-muted-foreground">Novas vagas liberadas</div>
+                <p className="text-xs text-accent mt-2">🔥 35 já esgotaram!</p>
                 {/* Progress bar for spots */}
                 <div className="mt-3">
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
                     <div 
                       className="h-full bg-gradient-to-r from-accent to-primary rounded-full animate-pulse"
-                      style={{ width: '100%' }}
+                      style={{ width: '30%' }}
                     />
                   </div>
                 </div>
