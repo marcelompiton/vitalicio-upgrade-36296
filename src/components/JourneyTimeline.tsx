@@ -133,7 +133,7 @@ export const JourneyTimeline = ({ onCtaClick }: JourneyTimelineProps) => {
               <Button 
                 variant="accent" 
                 size="xl" 
-                onClick={onCtaClick}
+                onClick={() => window.open('https://pay.hotmart.com/S103204336V?off=tb7xto77', '_blank')}
                 className="animate-pulse-slow"
               >
                 Garantir o Meu Lugar
