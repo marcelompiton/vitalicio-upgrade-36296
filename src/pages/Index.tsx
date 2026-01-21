@@ -464,7 +464,7 @@ const Index = () => {
             </h2>
 
             <p className="text-xl text-muted-foreground mb-8">
-              Esta é uma oferta especial válida até quarta-feira (21/01) às 23:59! O acesso vitalício não estará mais
+              Esta é uma oferta especial válida até quinta-feira (23/01) às 23:59! O acesso vitalício não estará mais
               disponível por este valor promocional. Esta oportunidade não se repetirá.
             </p>
           </ScrollReveal>
@@ -488,8 +488,8 @@ const Index = () => {
                 </div>
               </div>
               <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
-                <div className="text-4xl font-bold text-primary mb-2">Até Quarta</div>
-                <div className="text-muted-foreground">Termina 21/01 às 23:59</div>
+                <div className="text-4xl font-bold text-primary mb-2">Até Quinta</div>
+                <div className="text-muted-foreground">Termina 23/01 às 23:59</div>
               </div>
             </div>
           </ScrollReveal>
@@ -523,7 +523,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
           <p className="mb-2">© 2025 Curso com IA. Todos os direitos reservados.</p>
-          <p className="text-xs">Oferta única e especial. Válida até quarta-feira (21/01) às 23:59.</p>
+          <p className="text-xs">Oferta única e especial. Válida até quinta-feira (23/01) às 23:59.</p>
         </div>
       </footer>
     </div>
