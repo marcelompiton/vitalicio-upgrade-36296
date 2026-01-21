@@ -69,7 +69,7 @@ export const JourneyTimeline = ({ onCtaClick }: JourneyTimelineProps) => {
               <div className={`relative flex items-center gap-4 md:gap-8 mb-6 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 {/* Icon */}
                 <div className="relative z-10 flex-shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-                  <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center shadow-lg shadow-primary/20">
+                  <div className="w-12 h-12 rounded-full bg-background border-2 border-primary flex items-center justify-center shadow-lg shadow-primary/20">
                     <CheckCircle2 className="w-6 h-6 text-primary" />
                   </div>
                 </div>
@@ -92,8 +92,10 @@ export const JourneyTimeline = ({ onCtaClick }: JourneyTimelineProps) => {
             <div className="relative flex items-center gap-4 md:gap-8 mb-8">
               {/* Icon */}
               <div className="relative z-10 flex-shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-xl shadow-accent/30 animate-pulse">
-                  <Target className="w-7 h-7 text-white" />
+                <div className="w-14 h-14 rounded-full bg-background border-3 border-accent flex items-center justify-center shadow-xl shadow-accent/30">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center animate-pulse">
+                    <Target className="w-7 h-7 text-white" />
+                  </div>
                 </div>
               </div>
               
