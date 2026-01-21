@@ -60,8 +60,8 @@ export const JourneyTimeline = ({ onCtaClick }: JourneyTimelineProps) => {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary to-accent md:-translate-x-1/2" />
+          {/* Vertical line - z-0 to stay behind icons */}
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary to-accent md:-translate-x-1/2 z-0" />
           
           {/* Completed Steps */}
           {journeySteps.map((step, index) => (
