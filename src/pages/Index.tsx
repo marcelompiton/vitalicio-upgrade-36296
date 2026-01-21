@@ -233,6 +233,63 @@ const Index = () => {
       {/* Journey Timeline Section */}
       <JourneyTimeline onCtaClick={scrollToPricing} />
 
+      {/* Urgency Section */}
+      <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 bg-gradient-to-br from-card to-card/50 border-y border-border">
+        <div className="max-w-4xl mx-auto text-center">
+          <ScrollReveal>
+            <div className="inline-block bg-accent/10 border border-accent rounded-full px-6 py-2 mb-6 animate-pulse-glow">
+              <span className="text-accent font-semibold">⏰ Tempo Limitado</span>
+            </div>
+
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Ficar de Fora Significa <span className="highlight-underline text-accent">Ficar Para Trás</span>
+            </h2>
+
+            <p className="text-xl text-muted-foreground mb-8">
+              Você já conhece o poder da IA na rotina jurídica. A diferença entre quem domina e quem apenas observa 
+              está se definindo <span className="text-foreground font-semibold">agora</span>. Oferta válida até quinta-feira (23/01) às 23:59.
+            </p>
+            
+            <div className="bg-destructive/10 border border-destructive/30 rounded-xl p-4 mb-8 max-w-xl mx-auto">
+              <p className="text-destructive font-medium">
+                ⚠️ Em 2 anos, quem não dominar IA no direito estará competindo em desvantagem. 
+                Você quer liderar ou correr atrás?
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
+              <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300">
+                <div className="text-4xl font-bold text-primary mb-2">
+                  <AnimatedCounter end={15} />
+                </div>
+                <div className="text-muted-foreground">Novas vagas liberadas</div>
+                <p className="text-xs text-accent mt-2">🔥 35 profissionais já garantiram!</p>
+                <div className="mt-3">
+                  <div className="h-2 bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-gradient-to-r from-accent to-primary rounded-full animate-pulse"
+                      style={{ width: '30%' }}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="text-4xl font-bold text-primary mb-2">Até Quinta</div>
+                <div className="text-muted-foreground">Termina 23/01 às 23:59</div>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={400}>
+            <Button variant="hero" size="xl" onClick={scrollToPricing} className="animate-pulse-glow">
+              Ver Opções de Acesso
+            </Button>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Immersion Section */}
       <section className="py-8 md:py-12 px-4 bg-gradient-to-br from-card via-background to-card relative overflow-hidden">
         {/* Animated background effects */}
@@ -423,64 +480,6 @@ const Index = () => {
               <BenefitCard key={index} {...benefit} />
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Urgency Section */}
-      <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 bg-gradient-to-br from-card to-card/50 border-y border-border">
-        <div className="max-w-4xl mx-auto text-center">
-          <ScrollReveal>
-            <div className="inline-block bg-accent/10 border border-accent rounded-full px-6 py-2 mb-6 animate-pulse-glow">
-              <span className="text-accent font-semibold">⏰ Tempo Limitado</span>
-            </div>
-
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Ficar de Fora Significa <span className="highlight-underline text-accent">Ficar Para Trás</span>
-            </h2>
-
-            <p className="text-xl text-muted-foreground mb-8">
-              Você já conhece o poder da IA na rotina jurídica. A diferença entre quem domina e quem apenas observa 
-              está se definindo <span className="text-foreground font-semibold">agora</span>. Oferta válida até quinta-feira (23/01) às 23:59.
-            </p>
-            
-            <div className="bg-destructive/10 border border-destructive/30 rounded-xl p-4 mb-8 max-w-xl mx-auto">
-              <p className="text-destructive font-medium">
-                ⚠️ Em 2 anos, quem não dominar IA no direito estará competindo em desvantagem. 
-                Você quer liderar ou correr atrás?
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={200}>
-            <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
-              <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300">
-                <div className="text-4xl font-bold text-primary mb-2">
-                  <AnimatedCounter end={15} />
-                </div>
-                <div className="text-muted-foreground">Novas vagas liberadas</div>
-                <p className="text-xs text-accent mt-2">🔥 35 profissionais já garantiram!</p>
-                {/* Progress bar for spots */}
-                <div className="mt-3">
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-gradient-to-r from-accent to-primary rounded-full animate-pulse"
-                      style={{ width: '30%' }}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
-                <div className="text-4xl font-bold text-primary mb-2">Até Quinta</div>
-                <div className="text-muted-foreground">Termina 23/01 às 23:59</div>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={400}>
-            <Button variant="hero" size="xl" onClick={scrollToPricing} className="animate-pulse-glow">
-              Ver Opções de Acesso
-            </Button>
-          </ScrollReveal>
         </div>
       </section>
 
