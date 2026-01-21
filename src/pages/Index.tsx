@@ -262,6 +262,9 @@ const Index = () => {
         <PricingPlans />
       </div>
 
+      {/* Journey Timeline Section */}
+      <JourneyTimeline onCtaClick={scrollToPricing} />
+
       {/* Immersion Section */}
       <section className="py-8 md:py-12 px-4 bg-gradient-to-br from-card via-background to-card relative overflow-hidden">
         {/* Animated background effects */}
@@ -512,9 +515,6 @@ const Index = () => {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* Journey Timeline Section */}
-      <JourneyTimeline onCtaClick={scrollToPricing} />
 
       {/* FAQ Section */}
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
