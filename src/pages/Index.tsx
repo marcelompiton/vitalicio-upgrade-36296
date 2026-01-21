@@ -148,16 +148,20 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center">
             <div className="inline-block bg-accent/10 border border-accent/20 rounded-full px-6 py-2 mb-6 backdrop-blur-sm animate-float-slow">
-                <span className="text-accent font-semibold">🔥 Oferta Exclusiva para os Alunos</span>
+                <span className="text-accent font-semibold">🎯 Você já deu o primeiro passo. Agora complete a jornada.</span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Torne-se um Aluno
+                IA no Direito é
                 <br />
                 <span className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--primary-glow))] bg-clip-text text-transparent">
-                  Vitalício Agora
+                  Inevitável
                 </span>
               </h1>
+              
+              <p className="text-lg md:text-xl text-foreground font-medium mb-4">
+                A questão é: você <span className="text-accent font-bold">lidera</span> ou <span className="text-muted-foreground">corre atrás</span>?
+              </p>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
                 <span className="block mb-3">
@@ -192,7 +196,7 @@ const Index = () => {
                     <Users className="w-6 h-6 text-accent" />
                     <p className="text-2xl font-bold text-accent">+15 vagas liberadas!</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">⚠️ As 35 vagas esgotaram! Últimas 15 liberadas</p>
+                  <p className="text-sm text-muted-foreground">⚠️ 35 colegas seus já garantiram. Restam apenas 15.</p>
                 </div>
               </div>
 
@@ -205,7 +209,7 @@ const Index = () => {
                 Ver Opções de Acesso
               </Button>
 
-              <p className="text-sm text-muted-foreground mt-4">⚡ 35 esgotaram • +15 liberadas • 🔒 Pagamento 100% seguro</p>
+              <p className="text-sm text-muted-foreground mt-4">⚡ 35 profissionais já garantiram • +15 vagas liberadas • 🔒 Pagamento 100% seguro</p>
             </div>
 
             <div className="relative hidden md:block">
@@ -410,8 +414,8 @@ const Index = () => {
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Por Que Fazer o VITALÍCIO Agora?</h2>
-            <p className="text-xl text-muted-foreground">Todos os benefícios que você vai conquistar</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Por Que Completar Sua Jornada Agora?</h2>
+            <p className="text-xl text-muted-foreground">Você já deu o primeiro passo. Veja o que falta conquistar:</p>
           </div>
 
           {/* Course Platform Image */}
@@ -460,13 +464,20 @@ const Index = () => {
             </div>
 
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Não Perca Esta <span className="highlight-underline text-accent">Oportunidade Única</span>
+              Ficar de Fora Significa <span className="highlight-underline text-accent">Ficar Para Trás</span>
             </h2>
 
             <p className="text-xl text-muted-foreground mb-8">
-              Esta é uma oferta especial válida até quinta-feira (23/01) às 23:59! O acesso vitalício não estará mais
-              disponível por este valor promocional. Esta oportunidade não se repetirá.
+              Você já conhece o poder da IA na rotina jurídica. A diferença entre quem domina e quem apenas observa 
+              está se definindo <span className="text-foreground font-semibold">agora</span>. Oferta válida até quinta-feira (23/01) às 23:59.
             </p>
+            
+            <div className="bg-destructive/10 border border-destructive/30 rounded-xl p-4 mb-8 max-w-xl mx-auto">
+              <p className="text-destructive font-medium">
+                ⚠️ Em 2 anos, quem não dominar IA no direito estará competindo em desvantagem. 
+                Você quer liderar ou correr atrás?
+              </p>
+            </div>
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
@@ -476,7 +487,7 @@ const Index = () => {
                   <AnimatedCounter end={15} />
                 </div>
                 <div className="text-muted-foreground">Novas vagas liberadas</div>
-                <p className="text-xs text-accent mt-2">🔥 35 já esgotaram!</p>
+                <p className="text-xs text-accent mt-2">🔥 35 profissionais já garantiram!</p>
                 {/* Progress bar for spots */}
                 <div className="mt-3">
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
