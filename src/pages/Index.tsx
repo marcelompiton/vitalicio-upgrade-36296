@@ -12,6 +12,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 import { PricingPlans } from "@/components/PricingPlans";
+import { JourneyTimeline } from "@/components/JourneyTimeline";
 import { Infinity, Clock, TrendingUp, Award, Zap, Shield, Star, Users, Sparkles, Bot } from "lucide-react";
 import heroInstructor from "@/assets/hero-instructor.jpg";
 import coursePlatform from "@/assets/course-platform.webp";
@@ -512,6 +513,8 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Journey Timeline Section */}
+      <JourneyTimeline onCtaClick={scrollToPricing} />
 
       {/* FAQ Section */}
       <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4">
