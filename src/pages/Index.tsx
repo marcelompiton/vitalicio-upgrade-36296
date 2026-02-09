@@ -27,8 +27,8 @@ import assistentesRobos from "@/assets/assistentes-robos.webp";
 import { toZonedTime } from "date-fns-tz";
 
 const Index = () => {
-  // Data de fim da promoção: 6 de fevereiro (quarta-feira) às 23:59 no horário de Brasília
-  const promoEndDate = new Date("2026-02-06T23:59:59-03:00");
+  // Data de fim da promoção: 11 de fevereiro (quarta-feira) às 23:59 no horário de Brasília
+  const promoEndDate = new Date("2026-02-11T23:59:59-03:00");
 
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing-plans");
@@ -99,12 +99,12 @@ const Index = () => {
     {
       question: "Essa promoção é realmente válida até quarta-feira?",
       answer:
-        "Sim! Esta é uma oferta exclusiva válida apenas até quarta-feira (06/02) às 23:59. Após esse horário, a promoção será encerrada definitivamente.",
+        "Sim! Esta é uma oferta exclusiva válida apenas até quarta-feira (11/02) às 23:59. Após esse horário, a promoção será encerrada definitivamente.",
     },
     {
       question: "O que acontece se eu não aproveitar essa oferta?",
       answer:
-        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após quarta-feira (06/02) às 23:59, essa oferta especial não estará mais disponível.",
+        "Esta é uma oportunidade única e irrepetível. Você perderá a chance de ter acesso vitalício por apenas R$ 750,00. Após quarta-feira (11/02) às 23:59, essa oferta especial não estará mais disponível.",
     },
     {
       question: "Quem pode aproveitar essa oferta?",
@@ -247,7 +247,7 @@ const Index = () => {
 
             <p className="text-xl text-muted-foreground mb-8">
               Você já conhece o poder da IA na rotina jurídica. A diferença entre quem domina e quem apenas observa
-              está se definindo <span className="text-foreground font-semibold">agora</span>. Oferta válida até quarta-feira (06/02) às 23:59.
+              está se definindo <span className="text-foreground font-semibold">agora</span>. Oferta válida até quarta-feira (11/02) às 23:59.
             </p>
             
             <div className="bg-destructive/10 border border-destructive/30 rounded-xl p-4 mb-8 max-w-xl mx-auto">
@@ -277,7 +277,7 @@ const Index = () => {
               </div>
               <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
               <div className="text-4xl font-bold text-primary mb-2">Até Quarta</div>
-                <div className="text-muted-foreground">Termina 06/02 às 23:59</div>
+                <div className="text-muted-foreground">Termina 11/02 às 23:59</div>
               </div>
             </div>
           </ScrollReveal>
@@ -503,7 +503,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
           <p className="mb-2">© 2025 Curso com IA. Todos os direitos reservados.</p>
-          <p className="text-xs">Oferta única e especial. Válida até quarta-feira (06/02) às 23:59.</p>
+          <p className="text-xs">Oferta única e especial. Válida até quarta-feira (11/02) às 23:59.</p>
         </div>
       </footer>
     </div>
